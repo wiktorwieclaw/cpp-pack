@@ -43,4 +43,4 @@ C++ project structure template.
   This ensures that the library name needs to be specified as a path in the include directive `#include "libname/lib.h"`.
   This is important when your library has many header files.
 * Write unit tests inside your library directory.
-* Feel free to fork and modify this repository for your liking.
+* Feel free to fork and modify this repository to your liking.
