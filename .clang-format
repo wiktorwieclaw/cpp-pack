@@ -1,0 +1,14 @@
+BasedOnStyle: Google
+ColumnLimit: 100
+IndentWidth: 4
+ContinuationIndentWidth: 6
+AlignAfterOpenBracket: AlwaysBreak
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+BreakConstructorInitializers: BeforeColon
+BinPackArguments: false
+BinPackParameters: false
+AllowShortEnumsOnASingleLine: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveMacros: true
+PointerAlignment: Left
