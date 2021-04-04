@@ -29,6 +29,7 @@ C++ project structure template.
 │   ├── run.cpp
 │   └── run.hpp
 ├── test
+│   ├── CMakeLists.txt
 │   └── integration.test.cpp
 ├── .clang-format
 ├── .clang-tidy
