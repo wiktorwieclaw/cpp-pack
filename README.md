@@ -4,7 +4,7 @@ C++ project structure template.
 ## Features
 * Includes [googletest](https://github.com/google/googletest) for testing and [fmt](https://github.com/fmtlib/fmt)
   for string formatting.
-* Ease of adding dependencies.
+* Ease of managing dependencies.
 * Code formatting using [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
 * Static code analysis using [clang-tidy](https://clang.llvm.org/extra/clang-tidy/).
 
@@ -29,6 +29,7 @@ C++ project structure template.
 │   ├── run.cpp
 │   └── run.hpp
 ├── test
+│   ├── CMakeLists.txt
 │   └── integration.test.cpp
 ├── .clang-format
 ├── .clang-tidy
@@ -43,4 +44,4 @@ C++ project structure template.
   This ensures that the library name needs to be specified as a path in the include directive `#include "libname/lib.h"`.
   This is important when your library has many header files.
 * Write unit tests inside your library directory.
-* Feel free to fork and modify this repository for your liking.
+* Feel free to fork and modify this repository to your liking.
