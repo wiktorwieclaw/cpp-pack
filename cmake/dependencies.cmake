@@ -14,3 +14,11 @@ FetchContent_Declare(googletest
         )
 
 FetchContent_MakeAvailable(googletest)
+
+
+FetchContent_Declare(gsl
+        GIT_REPOSITORY https://github.com/microsoft/GSL
+        GIT_TAG main
+        )
+
+FetchContent_MakeAvailable(gsl)

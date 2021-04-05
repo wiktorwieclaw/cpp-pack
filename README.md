@@ -2,9 +2,11 @@
 C++ project structure template.
 
 ## Features
-* Includes [googletest](https://github.com/google/googletest) for testing and [fmt](https://github.com/fmtlib/fmt)
-  for string formatting.
-* Ease of adding dependencies.
+* Includes useful libraries out of the box:
+  * [googletest](https://github.com/google/googletest) for testing 
+  * [fmt](https://github.com/fmtlib/fmt) for string formatting
+  * [gsl](https://github.com/microsoft/GSL) contains useful utilities such as ```gsl::span```
+* Ease of managing dependencies using CMake's ```FetchContent``` module.
 * Code formatting using [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
 * Static code analysis using [clang-tidy](https://clang.llvm.org/extra/clang-tidy/).
 

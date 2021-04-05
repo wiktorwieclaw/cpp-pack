@@ -5,6 +5,8 @@ set(SOURCES
         )
 
 set(LIBS
+        fmt::fmt
+        GSL
         hello
         )
 
