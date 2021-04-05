@@ -6,6 +6,7 @@ set(SOURCES
 
 set(LIBS
         hello
+        fmt::fmt
         )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
