@@ -2,8 +2,10 @@
 
 #include <fmt/format.h>
 
-using namespace hello;
+namespace hello {
 
-auto hello::make_greeting(std::string_view name) -> std::string {
+auto make_greeting(std::string_view name) -> std::string {
     return fmt::format("Hello {}!", name);
 }
+
+}  // namespace hello

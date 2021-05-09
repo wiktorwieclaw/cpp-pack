@@ -9,6 +9,6 @@ BreakConstructorInitializers: BeforeColon
 BinPackArguments: false
 BinPackParameters: false
 AllowShortEnumsOnASingleLine: true
-AlignConsecutiveAssignments: true
-AlignConsecutiveMacros: true
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveMacros: Consecutive
 PointerAlignment: Left

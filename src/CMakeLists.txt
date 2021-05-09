@@ -1,19 +1,17 @@
-set(SOURCES
-        main.cpp
+add_library(${PROJECT_NAME}_lib
         run.cpp
         run.hpp
         )
 
-set(LIBS
-        fmt::fmt
-        GSL
+target_link_libraries(${PROJECT_NAME}_lib
+        ${CONAN_LIBS}
         hello
-        fmt::fmt
         )
 
-add_executable(${PROJECT_NAME} ${SOURCES})
-target_link_libraries(${PROJECT_NAME} ${LIBS})
+add_executable(${PROJECT_NAME}
+        main.cpp
+        )
 
-add_library(${PROJECT_NAME}_lib ${SOURCES})
-target_include_directories(${PROJECT_NAME}_lib PUBLIC .)
-target_link_libraries(${PROJECT_NAME}_lib ${LIBS})
+target_link_libraries(${PROJECT_NAME}
+        ${PROJECT_NAME}_lib
+        )

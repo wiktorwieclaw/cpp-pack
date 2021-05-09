@@ -7,7 +7,7 @@ add_library(${LIB_NAME}
 target_include_directories(${LIB_NAME} PUBLIC include)
 
 target_link_libraries(${LIB_NAME}
-        PRIVATE fmt::fmt
+        PRIVATE ${CONAN_LIBS}
         )
 
 add_executable(${LIB_NAME}.test

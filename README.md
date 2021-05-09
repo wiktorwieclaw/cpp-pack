@@ -1,20 +1,22 @@
 # cpp-pack
-C++ project structure template.
+C++ project template.
 
-## Features
-* Includes [googletest](https://github.com/google/googletest) for testing and [fmt](https://github.com/fmtlib/fmt)
-  for string formatting.
-* Ease of managing dependencies.
-* Code formatting using [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
-* Static code analysis using [clang-tidy](https://clang.llvm.org/extra/clang-tidy/).
+## Dependencies
+* [CMake](https://cmake.org/)
+* [Conan](https://conan.io/)
+  
+## Optional dependencies
+* [Doxygen](https://www.doxygen.nl/index.html)
+* [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
+* [ClangTidy](https://clang.llvm.org/extra/clang-tidy/)
 
 ## Structure
 ```
 .
 ├── cmake
-│   └── dependencies.cmake
-├── docs
-│   └── doc.md
+│   └── conan.cmake
+├── doc
+│   └── CMakeLists.txt
 ├── lib
 │   ├── hello
 │   │   ├── include/hello
@@ -33,15 +35,18 @@ C++ project structure template.
 │   └── integration.test.cpp
 ├── .clang-format
 ├── .clang-tidy
-└── CMakeLists.txt
+├── CMakeLists.txt
+└── conanfile.txt 
+```
+
+## Build
+```bash
+mkdir build
+cd build
+conan install ..
+cmake ..
 ```
 
 ## Notes
-* Don't forget to change the name of your project in `/CMakeLists.txt`.
-* `/lib/` is not meant for external libraries but for parts of your code that could be considered as a separate package.
-  For external libraries I'd suggest using fetch in `/cmake/dependency.cmake`.
-* Put your library headers in `/include/libname/` directory.
-  This ensures that the library name needs to be specified as a path in the include directive `#include "libname/lib.h"`.
-  This is important when your library has many header files.
-* Write unit tests inside your library directory.
-* Feel free to fork and modify this repository to your liking.
+* Change the name of your project in `/CMakeLists.txt`.
+* Feel free to modify this repository to your liking.

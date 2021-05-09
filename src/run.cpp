@@ -9,7 +9,5 @@ void run() {
     std::string name;
     std::cin >> name;
 
-    auto greeting = hello::make_greeting(name);
-
-    fmt::print(greeting);
+    fmt::print(hello::make_greeting(name));
 }
