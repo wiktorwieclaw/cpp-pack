@@ -3,6 +3,6 @@ add_executable(integration.test
         )
 
 target_link_libraries(integration.test
-        gtest_main
+        CONAN_PKG::gtest
         ${PROJECT_NAME}_lib
         )

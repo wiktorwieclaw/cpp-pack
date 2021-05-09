@@ -4,7 +4,7 @@ add_library(${PROJECT_NAME}_lib
         )
 
 target_link_libraries(${PROJECT_NAME}_lib
-        ${CONAN_LIBS}
+        CONAN_PKG::fmt
         hello
         )
 
