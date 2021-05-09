@@ -1,8 +1,6 @@
 find_package(Doxygen)
 
 if (DOXYGEN_FOUND)
-    find_package(Doxygen REQUIRED)
-
     set(DOXYGEN_RECURSIVE Yes)
     set(DOXYGEN_EXTRACT_ALL Yes)
     set(DOXYGEN_HIDE_SCOPE_NAMES YES)
