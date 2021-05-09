@@ -15,9 +15,9 @@ C++ project template.
 .
 ├── cmake
 │   └── conan.cmake
-├── doc
+├── docs
 │   └── CMakeLists.txt
-├── lib
+├── libs
 │   ├── hello
 │   │   ├── include/hello
 │   │   │   └── hello.hpp
@@ -30,7 +30,7 @@ C++ project template.
 │   ├── main.cpp
 │   ├── run.cpp
 │   └── run.hpp
-├── test
+├── tests
 │   ├── CMakeLists.txt
 │   └── integration.test.cpp
 ├── .clang-format

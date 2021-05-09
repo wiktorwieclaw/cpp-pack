@@ -11,6 +11,6 @@ if (DOXYGEN_FOUND)
 
     doxygen_add_docs(docs
             ${CMAKE_SOURCE_DIR}/src
-            ${CMAKE_SOURCE_DIR}/lib
+            ${CMAKE_SOURCE_DIR}/libs
     )
 endif ()
