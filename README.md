@@ -6,7 +6,6 @@ C++ project template.
 * [Conan](https://conan.io/)
   
 ## Optional dependencies
-* [Doxygen](https://www.doxygen.nl/index.html)
 * [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
 * [ClangTidy](https://clang.llvm.org/extra/clang-tidy/)
 
@@ -14,29 +13,20 @@ C++ project template.
 ```
 .
 ├── cmake
-│   └── conan.cmake
-├── docs
-│   └── CMakeLists.txt
-├── libs
-│   ├── hello
-│   │   ├── include/hello
-│   │   │   └── hello.hpp
-│   │   ├── CMakeLists.txt
-│   │   ├── hello.cpp
-│   │   └── hello.test.cpp     
-│   └── CMakeLists.txt
+│   └── conan.cmake
 ├── src
 │   ├── CMakeLists.txt
-│   ├── main.cpp
-│   ├── run.cpp
-│   └── run.hpp
-├── tests
+│   └── main.cpp
+├── test
 │   ├── CMakeLists.txt
-│   └── integration.test.cpp
+│   └── test.cpp
 ├── .clang-format
 ├── .clang-tidy
+├── .gitignore
 ├── CMakeLists.txt
-└── conanfile.txt 
+├── conanfile.txt
+├── LICENSE
+└── README.md
 ```
 
 ## Build
@@ -45,9 +35,5 @@ mkdir build
 cd build
 conan install ..
 cmake ..
-make
+cmake --build .
 ```
-
-## Notes
-* Change the name of your project in `/CMakeLists.txt`.
-* Feel free to modify this repository to your liking.
